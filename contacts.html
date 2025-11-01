@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — КГКУ "Региональное жилищное управление"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>КГКУ "Региональное жилищное управление"</h1>
+                    <p>Алтайский край</p>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul id="mainMenu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="services.html" class="nav-link">Услуги</a></li>
+                <li><a href="news.html" class="nav-link">Новости</a></li>
+                <li><a href="faq.html" class="nav-link">Вопросы и ответы</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <h2 class="page-title">Контакты</h2>
+            
+            <div class="info-section">
+                <h3>Контактная информация</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div>
+                            <strong>Адрес:</strong>
+                            656049, Алтайский край,<br>
+                            г.Барнаул, ул.Крупской дом 101 корпус 1, домофон 80*
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <strong>Телефон приемной:</strong>
+                            8 800 350 2661
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <strong>Аварийно-диспетчерская служба:</strong>
+                            (3852) 556695<br>
+                            (круглосуточно)
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <strong>Электронная почта:</strong>
+                            info@rju-altai.ru<br>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="info-section">
+                <h3>Режим работы</h3>
+                <ul>
+                    <li>Понедельник - Четверг: 8:00 - 17:00</li>
+                    <li>Пятница: 8:00 - 16:00</li>
+                    <li>Перерыв: 12:00 - 13:00</li>
+                    <li>Суббота, Воскресенье: выходной</li>
+                    <li>Аварийно-диспетчерская служба: круглосуточно</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <h3>Отправить обращение</h3>
+                <form onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label>Ваше имя *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон *</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Адрес дома</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Сообщение *</label>
+                        <textarea required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить обращение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1b3443fd67fd07e63d9db0bf88927b33ca426488b590b7de2926b9709e7142dc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>О компании</h4>
+                    <p>КГКУ "Региональное жилищное управление" Алтайского края осуществляет управление государственным жилищным фондом региона.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <a href="about.html">О нас</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="news.html">Новости</a>
+                    <a href="faq.html">Вопросы и ответы</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Тел: 8 800 350 2661 </p>
+                    <p>Email: info@rju-altai.ru</p>
+                    <p>Адрес: г. Барнаул,<br>ул.Крупской 101 корпус 1 </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 КГКУ "Региональное жилищное управление" Алтайского края. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
